@@ -1,0 +1,44 @@
+Hello, Cloud Gurus.
+My name is Moosa Khalid and I'll be your training architect for this HashiCorp
+Certified Terraform Associate Foundations course,
+which is the first of the 2 modules, which helps you get Terraform certified.
+We'll be talking about why we should be thinking about getting Terraform
+certified. You may have come across a term,
+IaC or infrastructure as code,
+which basically is the process of managing and provisioning IT systems through
+machine-readable definition files,
+rather than physically logging into systems or using other interactive
+configuration tools. Now there's quite a few IaC tools out there,
+such as Ansible, Chef and Puppet. However,
+Terraform is a bit different from these IaC tools because
+it keeps track of all the resources that you've deployed for you.
+You'll also be expanding your skills and knowledge of Terraform and its best
+practices.
+One of the best things about Terraform is that it's really easy to get started
+with. You just download a self-contained binary and you're ready to go,
+but with that comes a little bit of an issue because the off the shelf
+time for learning about Terraform is so quick that people don't usually apply
+the best practices that HashiCorp recommends.
+So that's something that we'll be learning and that's something that will be
+taught in this certification course.
+You'll also be getting insight into the enterprise features of Terraform,
+which is part of the certification objective,
+and you'll be learning how it can help your teams be more performant,
+more optimized,
+and collaborate better on the Terraform-managed services platform offered by
+HashiCorp. And finally,
+we'll be solidifying the Terraform fundamentals,
+having the confidence to go ahead and use Terraform in more advanced
+deployments,
+now that you're more aware of the best practices and the huge variety of
+providers that it works against. Of course,
+we'll be talking more about Terraform providers in the course,
+so don't worry about that part yet,
+but just know that Terraform has been adopted by businesses of all ranges from
+small to enterprise because of its cloud-agnostic nature,
+meaning Terraform can work across many clouds. It's flexibility,
+and it's off the shelf ease of learning.
+Being recognized as a Terraform expert goes to show your versatility with
+infrastructure deployment in general.
+I hope I got you excited for this certification,
+so buckle your seat belts and join me in the course.

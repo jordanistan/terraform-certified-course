@@ -1,0 +1,35 @@
+Well, howdy folks, and welcome to this lesson on Terraform Init.
+You can probably tell by the name that init is short for initializing and that
+it initializes something in the Terraform workflow. So,
+let's find out what it really does. Well, terraform init is a command,
+which you can see at the top of this slide -- terraform space init --
+and it basically initializes the working directory that contains your Terraform
+code. Now that's a really simplistic approach to understand Terraform init,
+so let's break it down.
+The very first step Terraform init does is to download the supporting or
+ancillary components required for your code to work.
+These are things like the providers,
+which provide the libraries and code for your resources to be able to make API
+calls to whatever infrastructure you're deploying into, and also modules,
+which we'll learn more about in the course later. Additionally,
+this also sets up the backend for storing data from state file.
+Now the Terraform state file is going to be discussed in much more detail later
+in the course. But for right now,
+just know that it is a mechanism by which Terraform tracks resources,
+so that it knows when to deploy or destroy a resource,
+depending on how you change the code. Now,
+Terraform init is a critical command to any data from project,
+because this is the first command that you'll be running when you're done
+writing your initial code.
+This command basically goes and fetches the providers, also known as plugins,
+which are going to provide the resources that your Terraform code is going to
+use. Terraform init can either go and download the plugins and modules from the
+Terraform public registry over the internet or from your custom URLs where you
+might've uploaded your own custom modules written for Terraform.
+It caches those plugins and modules. However,
+if a newer version of the module is available,
+it's going to download it and install that version by default.
+There's a lot of nice functionality available with the switches or flags
+available with the Terraform init command,
+which I'll urge you to go and have a look at.
+Thank you for going through this lesson.

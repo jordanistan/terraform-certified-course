@@ -1,0 +1,75 @@
+Well, howdy folks,
+and welcome to this lesson on Resource Addressing in Terraform and Understanding
+Terraform Code. As evident from the name of this lesson,
+we'll be delving into your very first snippets of Terraform code. So,
+buckle up your seatbelts, and let's dive right in
+now. From our previous lesson on Terraform init,
+we already know that Terraform needs to fetch a plugin or providers so that our
+code can interact with different platforms.
+Terraform abstracts away all the API calls that it makes under the hood
+using providers. Every cloud vendor has its own provider.
+The snippet of code that you see in front of you may seem alien,
+but bear with me and let me break it down for you.
+This code fetches a provider -- in this case, the AWS provider.
+The word provider is a reserved keyword.
+We then have the name of the provider -- in this case, AWS --
+that we want to get from the public Terraform registry.
+And between the curly braces, we have the configuration parameters,
+which help define the arguments for the AWS provider. These will vary,
+depending on the provider that we use. Now, let's look at an example of the GCP,
+or Google cloud provider. Again, we have a similar structure.
+We have the reserved keyword provider.
+We're telling it to fetch the Google provider,
+with the Google keyword in the double quotes,
+and then we are providing it arguments that it needs to set up the
+authentication and the environment for the Google provider. In this case,
+this is the credentials argument, which is using the built-in function file,
+which helps fetch the credentials to authenticate against the Google cloud.
+And we'll be talking more about the building functions later in the course.
+We also have the additional arguments of project and region. Now,
+this new snippet of Terraform code that you see is called a resource block.
+With this, Terraform creates and starts tracking a resource from scratch.
+First, we have the reserved keyword resource.
+We then have the resource provided by the Terraform provider called AWS
+underscore instance. And after that,
+we have the arbitrary user-provided name for the resource that we are creating,
+which we are calling web.
+Inside the curly braces, we have the resource configuration arguments,
+which adhere to the AWS underscore instance resource.
+These arguments will change depending on which resource you are creating.
+In this case, we are providing the required AMI, or Amazon machine image ID,
+in the instance underscore type argument. Finally,
+to access this resource within your Terraform code,
+you would use the AWS underscore instance dot web object. So,
+there's the resource type, which is AWS underscore instance dot,
+and then the name that you gave to the resource, which is web.
+Using the dot notation,
+you can access any attributes that this object provides within your Terraform
+code.
+The next snippet of Terraform code that you see is called a data source block.
+With this, Terraform fetches data of an already existing resource environment.
+We again have the reserved keyword data.
+Then we have the resource provided by the different provider and then the name
+that we have assigned to the resource. Within the curly braces,
+we have the argument for the data source.
+Keep in mind that the main difference between a data source block and a resource
+block is that a data source block is fetching and tracking details of an already
+existing resource, whereas a resource block --
+which we witnessed in the previous slide -- creates a resource from scratch.
+The way to access the data source within your Terraform code is to use the
+notation data dot, then the instance type --
+which in this case is AWS underscore instance -- dot the user-provided name,
+which in this case is my dash vm. Again, using the dot notation,
+you can access all attributes that are attached to this data source object in
+your Terraform code.
+Now a couple of default Terraform behaviors are in order.
+Terraform executes the code in files ending with dot tf extension. So,
+be sure to put your Terraform code in file names ending with dot tf for
+Terraform to detect them automatically.
+Terraform by default looks for providers in the Terraform providers registry,
+the link for which is shown below. However,
+providers can also be sourced locally or internally and referenced within your
+Terraform code. You can even write your own custom providers,
+but that's a topic beyond the scope of the certification. However,
+it goes to show the flexibility that Terraform offers.
+Thank you for going through this lesson.

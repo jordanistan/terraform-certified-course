@@ -1,0 +1,30 @@
+Hello, and welcome to this lesson on the Terraform workflow.
+My name is Moosa Khalid,
+your course author and training architect for this course.
+When thinking of the Terraform workflow,
+there's only really two things in there. First, you write the code.
+Then you review the changes that the code will make.
+And finally you execute or deploy the actual code to realize real
+infrastructure, wherever you might want to deploy it.
+In the write phase,
+you're generally starting off either with a version control system as a best
+practice or even a flat file if you're working individually.
+Version control is recommended as a best practice so that you and a team can
+collaborate and enter it over the issues within your code.
+We then move on to planning or reviewing the changes that your code will make.
+This is an important step in the Terraform workflow,
+because at this point you're not yet deploying any infrastructure,
+but you can go ahead and see in detail the changes that the code will make
+within your actual environment.
+And looking at the review of the changes that the code will make,
+you can go back and modify your code. And with this cycle,
+you can perfect your code and get it to work exactly as you need it to.
+Finally,
+you move on to deploying or executing the code and making actual changes to an
+environment. This step deploys actual infrastructure,
+and creates real resources in the cloud.
+Whether you're working as an individual or a team,
+this workflow will yield the best results and the best efficiency.
+Later in the course,
+we'll be going through a lab and also a lesson which maps actual Terraform
+commands to the workflow. Thank you for going through this lesson.

@@ -1,0 +1,102 @@
+Welcome to this lesson on the exam blueprint of the HashiCorp Certified
+Terraform Associate exam. In this lesson, we'll be going through a few things.
+First, we'll be going through what to expect from the actual exam.
+Then we'll do a quick walkthrough of all the main objectives which will be
+tested on, and finally,
+we'll be discussing the types of questions that you can expect in the exam.
+So let's get cracking.
+The exam is 1 hour in duration.
+It will have anywhere between 50 to 60 questions and you will be tested on
+Terraform version 12 and higher.
+So if you've worked with versions earlier than version 12,
+just know that there has been drastic changes in the syntax and some logic since
+then. The exam will be online proctored.
+The whole process of certification is quite hands-off.
+You will need to register using HashiCorp's official website.
+From there you will be redirected to the exam portal,
+and you will also need to make sure that your system meets the requirements for
+the attempt of the exam.
+The certification has an expiration of 2 years from the day that you pass the
+exam.
+So now onto a quick walk through of the exam objectives,
+which will be tested on in the exam. In objective number 1,
+you'll be tested on understanding the Infrastructure as Code concepts. Here,
+HashiCorp expects you to be able to explain what infastructure as code,
+or IaC is, its benefits, and its advantages.
+In the 2nd objective,
+you need to understand the Infrastructure as Code from the perspective of
+Terraform,
+what makes it different from the other IaC tools and explain the benefits of
+some of the functionality and features that Terraform offers. In
+the 3rd objective you'll be tested on understanding the building blocks of
+Terraform, what it uses under the hood, how it works to deploy infrastructure ,
+and Terraform's various building blocks.
+The 4th objective will take us deeper,
+technically as we'll not only be diving into learning Terraform CLI commands,
+but learn what scenarios to use those commands in,
+keeping best practices in mind.
+And the 5th objective you'll be tested on the modularization capabilities of
+Terraform. For example, how can you create configuration of code,
+which is reusable so that you do not have to keep rewriting code.
+You'll be tested on module inputs and outputs as well as their versioning.
+You'll also need to know about scope of variables when used within root or child
+modules and the Terraform public module registry.
+The 6th objective will test you on navigating and being comfortable with the
+Terraform workflow.
+Things like local and remote backend storage for Terraform state files,
+state locking, the Terraform refresh, backend authentication,
+and managing sensitive data and state files.
+In the next objective you'll need to know how Terraform state is implemented and
+used. You'll need to be well-versed with the Terraform workflow,
+how Terraform configuration directories are initialized and the usage of
+Terraform sub commands, Terraform validate, plan, apply, and
+destroy.
+The 8th objective will test you on the actual coding aspect of Terraform,
+and you'll need to know about using variables and outputs in Terraform.
+You'll also need to know the difference between the resource and data blocks in
+Terraform, and when to use them. And finally,
+how resource addressing works in Terraform and how you can reference different
+Terraform resources within the same Terraform code.
+You'll also need to know about built-in functions and dynamic blocks.
+And finally,
+the 9th objective will test you mainly on the Terraform cloud and enterprise
+offerings, on things such as knowing about Sentinel,
+which is a policy enforcement framework by HashiCorp,
+which can be used in conjunction with Terraform.
+You'll also need to know the difference between functionality of the workspace
+feature between Terraform free offering,
+versus the same feature in its enterprise offering.
+You'll need to understand the main feature offered by Terraform managed cloud
+offering as well. So that was the Terraform exam blueprint.
+Now let's look at the type of questions that you can expect in the exam.
+First,
+we've got the basic true and false question where you'll be given a statement
+and you will need to determine if it's correct or not by choosing a true or
+false scenario. So for example,
+you've got a question where you're given 2 choices and you either have to select
+true or false. Next up,
+we have the classic multiple choice questions where you will be provided a
+scenario, a statement, or a snippet of code,
+and you will need to choose the single best answer out of all the provided
+options. And this is what it will look like.
+So you've got a question, there's a snippet of Terraform code,
+and you'll be asked to choose the best possible answer.
+Which will expect you to choose more than one options when answering and here is
+an example of it.
+So you have a question and you've got 5 options in there and you have to choose
+the correct 2 options from the 5 provided. And finally,
+you'll also be seeing text match questions,
+which are fill in the blank questions, basically. You will be given a statement.
+You will be given a statement with blank text boxes where you can type your
+answer. For these types of questions you'll not be given any choices,
+but don't worry, HashiCorp has ensured that for such questions,
+variations of the correct answer that demonstrate your understanding of the
+concept will also be accepted.
+HashiCorp on their official certification website,
+do mention other type of questions which may appear,
+but they do not specify what those other types of questions could be. However,
+in my recent attempt of the certification,
+I did not see any question type outside of what we have mentioned here.
+All the exam questions that you've seen here are available on the HashiCorp
+official Terraform certification website. The link for which is given here.
+Thank you for going through this lesson.

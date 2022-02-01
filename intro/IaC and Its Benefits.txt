@@ -1,0 +1,69 @@
+Welcome to this lesson on IaC, or Infrastructure as Code,
+and Its Benefits. You'll see me use the term IaC a lot throughout this course,
+so get used to it. So,
+we hear a lot about infrastructure as code, and it seems like magic, right?
+But what is this magic called infrastructure as code, really? Well,
+let me clarify it for you. Simply put,
+in the most basic terms,
+infrastructure as code is writing down what you want to deploy as human-readable
+code. So, you write down whatever you want to be deployed,
+and in most cases it's going to be declarative if you're using Terraform.
+But you basically write it down, and you can track it,
+as opposed to having to log into an AWS console and clicking on 15 different
+places to spin up a VM,
+where there's a chance that somebody is going to fat-finger something or
+double-click on a button and cause extra resources to be deployed --
+which ties into our next benefit, which is that it enables DevOps.
+The codification of deployment means that it can be tracked in version control
+such as Git, enabling better visibility and collaboration across teams. So now,
+distributed teams can work on the same chunk of code,
+which can deploy infrastructure and make sure that they agree on something which
+is immutable and stored in version control before it is deployed.
+For the majority of the IaC tools out there, the code is usually declarative,
+which means that you basically declare or write down exactly what you want
+without caring about what underlying functions or API calls will need to be made
+to deploy that infrastructure.
+The beauty of writing code this way is that when someone reads it,
+they can easily make sense of what is being deployed, and in addition to that,
+the code can be a form of documentation of the deployment itself.
+And finally, the speed, cost,
+and reduced risk of using infrastructure as code cannot be undermined,
+because less human intervention during deployment means fewer your chances of
+security flaws, somebody double-clicking and creating extra resources,
+or just wasting time by trying to find way to click Next to create a resource,
+which ties down to something that I mentioned right at the start --
+that when you're trying to deploy something by memory or clicking around on a
+console, there's a chance that, on your fifth attempt,
+you'll definitely make a mistake of choosing some wrong option in a dropdown or
+click on the wrong type of EC2 instance and therefore mess up your application.
+With using a consistent IaC tool such as Terraform,
+you can make sure that your code is uploaded to Git, tracked,
+and is always consistent. And then no matter how many times you deploy it,
+it is always going to be deployed with the same inputs and the same expected
+output. Now, before I end this lesson,
+I quickly wanted to show you a snippet of IaC code,
+more specifically Terraform code which is written in HashiCorp configuration
+language, or HCL.
+You'll notice that you don't need to know any programming languages,
+such as Python, C++, or the like. Instead,
+you'll be writing much easier-to-read and -understand declarative language,
+as shown here.
+However, don't worry.
+The exam will not test you on writing full-fledged Terraform code deployments
+but might test you on small snippets of it and how to manipulate variables and
+logic control via Terraform. In this example, though,
+I just wanted to show you that it's easy to read through the code to understand
+what's happening.
+And even though you might not know anything about AWS or whatever infrastructure
+you're going to deploy onto using Terraform, you can still make sense of it.
+In this example, we are using the AWS cloud to deploy a VPC,
+and you'll notice that we're declaring everything in sequence.
+We're telling Terraform to use the AWS cloud provider,
+and we're telling it to deploy a VPC.
+And you can check in the chunk of this code that you're giving it inputs which
+are essential to creating the VPC,
+such as a CIDR range or the IP range of the VPC and some of the other options,
+and also giving it a name to identify it with.
+This is going to be the same case with any cloud that you write the code for
+with Terraform, and this is how easy it gets.
+Thank you for going through this lesson.

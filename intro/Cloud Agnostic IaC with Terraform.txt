@@ -1,0 +1,61 @@
+Hello, Cloud Gurus,
+and welcome to this lesson on Cloud Agnostic IaC with Terraform.
+My name is Moosa Khalid,
+and I'll be your course author for this Terraform certification course.
+So, let me tell you why you love Terraform.
+Terraform can be used to codify the configuration for software defined networks.
+A popular usage of an SDN deployment via Terraform is AWS' virtual
+private cloud, or VPC, all through a few lines of HCL,
+Terraform's language.
+This opens up new possibilities for developers to think of network in terms of
+code, thereby enabling DevOps.
+This ties into the next feature of Terraform's versatility when interfacing with
+cloud and infrastructure vendor APIs or even resource schedulers like
+Kubernetes.
+Do you write your Terraform code in one uniform language and your syntax won't
+change under the hood? Terraform will make the experience seamless for you,
+regardless of where you're deploying.
+You might be wondering what cloud agnostic means here. Well, simply put,
+it means that Terraform doesn't care what cloud or infrastructure deployment
+method you're using.
+The library of cloud and infrastructure vendors that Terraform support is
+already quite impressive and growing by the day.
+This also means that you don't have to rely on just one vendor for high
+availability.
+You can use Terraform domains in a highly available solution across two public
+clouds, such as AWS and GCP,
+and achieve high availability beyond what only a single vendor can offer.
+Let's take a quick look at that library that we just mentioned. So,
+if I hop onto the Terraform official website and head down to the provider's
+page, you'll notice that there's many categories for providers.
+And I'll bet we learn more about providers in a bit, but for right now,
+just know that providers are your interface to various cloud and infrastructure
+vendors. So, let's go into Major Cloud,
+and you'll notice that Terraform has providers for Alibaba, AWS,
+Azure, VMware, Oracle, all the major public clouds. And the second category,
+the cloud category, has vendors such as DigitalOcean, Fastly,
+Gridscale, Heroku. So,
+notice how many options Terraform has given you to interface with various cloud
+vendors, not just the popular ones,
+but the ones that you might even not have heard of.
+And if you go inside databases, for example,
+you'll notice that Terraform even has providers for interfacing with MySQL,
+InfluxDB. So, this is one of the pluses of Terraform.
+The community is very active,
+and they are churning out a lot of interfacing with different cloud vendors
+through providers. And this is one of Terraform's strengths. So,
+now back to the advantages of Terraform and why you love it.
+Terraform's state tracking mechanism takes away the worry of dependency and
+resource tracking by keeping it all in one place.
+You don't have to worry about how to make changes to our Terraform deployed
+infrastructure. That part is handled by Terraform.
+You just need to know what you want to modify it through Terraform configuration
+or code, and Terraform handles getting you to your desired state. For example,
+if you change the operating system image for a cloud VM,
+which could be any cloud,
+Terraform automatically handles deleting the VM with the old image and spinning
+up the new one, saving you on the time spent on carrying out manual,
+laborious tasks and human errors. So,
+these international were reasons that Terraform is so convenient to use as an
+IaC tool. I hope that this piqued your interest in Terraform.
+Thank you for going through this lesson.

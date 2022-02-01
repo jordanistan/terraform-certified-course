@@ -1,0 +1,86 @@
+Howdy folks, and welcome to this lesson on Terraform Key Concepts: Plan,
+Apply, and Destroy. In essence,
+all these three concepts are actually Terraform commands,
+but we'll be diving into them separately to see how they help you with the
+Terraform core workflow and generally with Terraform as well.
+So let's dive right in.
+Before we dive into the first command or the concept of that command,
+let's analyze the Terraform core workflow. You first write the code.
+You then go ahead and review the code by using the terraform plan command,
+and you can do any number of iterations between the write and plan phase of your
+project. And finally,
+when you're done optimizing your code and are happy with the review of that
+code, you go ahead and apply or execute that code to realize actual
+infrastructure on whatever platform you want to do so. So
+keeping this in mind,
+this command basically reads the code and then creates and shows you a plan of
+the execution that it is going to go ahead with, once you execute the code.
+Now, this command is sort of a read-only command.
+It does go out and make API calls in the backend with your preferred
+platform. However, it will not make any changes to your environment as yet.
+It allows the users to review the action plan before executing anything.
+You can look at this plan as a team or even as an individual and make your
+decision regarding the final actual execution. At this point,
+Terraform also authenticates with the credentials of the platform that you're
+trying to deploy into. So again,
+the Terraform plan phase of the core workflow basically shows you a review of
+what you're going to be deploying actually in your environment,
+and it is an important command because, as an individual,
+you might want to sit back and take a look at the resources that your code is
+going to be deploying.
+And as a team,
+you might want to share the review or plan of your deployment with other teams
+to vet it and make sure that it is not deploying any unforeseen resources.
+Next up is the core workflow, which follows the plan command.
+And that is terraform apply.
+Terraform apply is the final command that you'll be running,
+so that your code is realized into the form of actual infrastructure being
+deployed into the platform of your choice.
+So it deploys the instructions and statements in the code onto your platform.
+It updates the deployment state tracking mechanism as well.
+Now this deployment state tracking mechanism that we're talking about is
+actually called the state file,
+and I'll be going into much more detail about what the state file is and what it
+does later in the course. Right now,
+just know that when apply works and once it starts creating resources in your
+environment of choice,
+it's going to go ahead and keep a track of all the resources and their details
+that it is creating into a single flat file called the state file. Now normally,
+that state file is either stored locally or can also be stored remotely in a few
+other cloud resources. However,
+usually the name of that file is terraform dot tf state, by default.
+The name can be changed. However,
+the important point at this stage is to know that the terraform apply command
+creates the state file, which is essential to Terraform's working,
+because subsequent commands will come back and look at the state file before
+making changes to your Terraform infrastructure.
+And next up is the terraform destroy command. Now this destroy command,
+as evident from its name,
+actually is all about destruction of the infrastructure. So,
+it looks at the recorded stored state file that we just talked about earlier,
+which is created by the terraform apply command,
+and it destroys all the resources which are being tracked by that state file.
+Now this command should be used with caution as it is non-reversible.
+So it's best to take backups and be sure that you want to delete infrastructure
+before you go ahead and use this command. So,
+remember that this command terraform destroy is for cleaning up or deleting
+infrastructure created and tracked through Terraform.
+This is a really nice little feature of Terraform because you don't have to go
+ahead and write the scripts for deleting infrastructure after you have created
+it.
+This saves you a lot of time and helps you uniformly delete all the resources in
+sequence. However, for right now,
+just remember the three main concepts of working with Terraform,
+which also comply with the Terraform code workflow and the lifecycle of the
+resources that Terraform creates. The first one is terraform plan,
+which reviews the code and shows you what is going to deploy;
+terraform apply command,
+which actually goes ahead and executes and deploys resources into whatever
+platform you want to deploy resources into.
+And finally for cleaning up your Terraform deployment,
+once it's end-of-life or not of any use,
+you can go ahead and use the terraform destroy command,
+and it is going to go ahead and clean up and delete all the resources.
+To reinforce these concepts and commands as well as the Terraform code workflow,
+there's a hands-on lab at the end of the section. Be sure to go through it.
+Thank you for going through this lesson.

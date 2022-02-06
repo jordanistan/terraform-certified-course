@@ -1,11 +1,10 @@
 provider "aws" {
   region = "us-east-1"
+  aws_access_key_id = "AKIAWQEYG7RG7SD73JMW"
+  aws_secret_access_key = "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"
 }
-resource "aws_instance" "terraform" {
-  ami           = "ami-00bf0e20ed7ea8cdc"
-  subnet_id     = "subnet-02efb7f98fb344ee3"
-  instance_type = "t3.micro"
-  tags = {
-    Name = "terraform-cert"
-  }
+
+resource "aws_vpc" "iamjordanvpc" {
+    cidr_block = "10.0.0.0/16"
+  
 }
